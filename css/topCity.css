@@ -1,0 +1,27 @@
+body {
+    font-family: "Titillium Web";
+}
+
+.title {
+    margin-top: 45px;
+    text-align: center;
+    font-size: 25px;
+    line-height: 35px;
+    font-weight: bold;
+    border-bottom: 2px solid var(--blue);
+    padding: 0px 50px 9px 50px;
+    width: fit-content;
+    position: relative;
+    left: 50%;
+    translate: -50%;
+    cursor: default;
+}
+
+#topCity, #aAa {
+    width: 85% !important;
+    max-height: 70vh;
+    margin-bottom: 40px;
+    position: relative;
+    left: 50%;
+    translate: -50%;
+}

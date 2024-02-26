@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css" />
+
+    <link rel="stylesheet" href="css/stationsMap.css">
+    <link rel="icon" href="img/fine-dust.png">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/navBar.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <script src="js/ajax.js"></script>
+    <script src="js/stationsMap.js"></script>
+</head>
+<body onload="getStationsCoordinates()">
+
+    <div id="navBar">
+        <div class="left">
+            <a href="dataCity.html">Dati Città</a>
+            <a href="topCity.html">Top Città</span>
+            <a href="cityAnalytics.html">Analisi Città</a>
+            <a href="yearlyData.html">Media Annuale</a>
+            <span class="selected">Mappa Stazioni</span>
+        </div>
+        <div class="right">
+            <a href="index.html">Home</a>
+        </div>
+    </div>
+
+    <h2 class="title">Mappa Stazioni</h2>
+
+    <div id="map"></div>
+
+    <p class="description">
+        In questa modalità possiamo vedere sulla mappa le stazioni che hanno eseguito le rilevazioni.
+    </p>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PM10 - Dati Città</title>
+
+    <link rel="icon" href="img/fine-dust.png">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/navBar.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/dataCity.css">
+
+    <script src="js/ajax.js"></script>
+    <script src="js/dataCity.js"></script>
+
+    <!-- External resources -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/date-fns/1.30.1/date_fns.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+
+</head>
+
+<body onload="options()">
+    <div id="navBar">
+        <div class="left">
+            <span class="selected">Dati Città</span>
+            <a href="topCity.html">Top Città</a>
+            <a href="cityAnalytics.html">Analisi Città</a>
+            <a href="yearlyData.html">Media Annuale</a>
+            <a href="stationsMap.html">Mappa Stazioni</a>
+        </div>
+        <div class="right">
+            <a href="index.html">Home</a>
+        </div>
+    </div>
+
+    <h2>
+        <div class="sel">
+            <button name="dataCity" id="dataCity" onclick="openSelection()"></button>
+            <img class="icon" src="img/chevron-down-solid.svg" id="icon" onclick="openSelection()">
+            <div id="options">
+            </div>
+        </div>
+    </h2>
+
+    <!-- il grafico rappresenta la concentrazione di PM10 / PM2.5 in microgrammi su metro cubo visualizzabile per mese -->
+    <div>
+        <canvas id="getByCity"></canvas>
+    </div>
+
+    <p class="description">
+        Qui si possono vedere i dati di una città nel periodo Gennaio 2019 - Dicembre 2020. Si può notare una
+        similitudine tra i grafici delle varie città, come ad esempio un picco a Marzo 2019 e un generale innalzamento
+        dei valori nel periodo Dicembre 2019 - Aprile 2020, indicatore del fatto che il problema è un problema globale e
+        non solo locale.
+    </p>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PM10 - Media Annuale</title>
+    <link rel="icon" href="img/fine-dust.png">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/navBar.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/yearlyData.css">
+
+    <script src="js/ajax.js"></script>
+    <script src="js/yearlyData.js"></script>
+
+    <!-- External resources -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/date-fns/1.30.1/date_fns.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+</head>
+
+<body onload="yearlyData()">
+    <div id="navBar">
+        <div class="left">
+            <a href="dataCity.html">Dati Città</a>
+            <a href="topCity.html">Top Città</a>
+            <a href="cityAnalytics.html">Analisi Città</a>
+            <span class="selected">Media Annuale</span>
+            <a href="stationsMap.html">Mappa Stazioni</a>
+        </div>
+        <div class="right">
+            <a href="index.html">Home</a>
+        </div>
+    </div>
+
+    <h2 class="title">
+        Media Annuale
+    </h2>
+
+    <div>
+        <canvas id="yearlyData"></canvas>
+    </div>
+
+    <p class="description">
+        L'<b>OMS</b> ha stabilito che il valore limite giornaliero per le particelle
+        PM10 non deve superare, nella media annua, una concentrazione di 40 &micro;g/m³, mentre per il PM2,5
+        non si deve andare oltre i 25 &micro;g/m³ 1.
+    </p>
+</body>
+
+</html>
