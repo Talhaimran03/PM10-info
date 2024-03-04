@@ -1,4 +1,8 @@
 # PM10-info-website
+![Language](https://img.shields.io/badge/Language-php-green?style=flat)
+![Language](https://img.shields.io/badge/Language-javascript-green?style=flat)
+![Language](https://img.shields.io/badge/Language-html-green?style=flat)
+![Language](https://img.shields.io/badge/Language-css-green?style=flat)
 
 <img src="https://github.com/Talhaimran03/PM10-info/assets/101459540/6824f2eb-43b1-42ad-a6e0-46676d5249d8" width="60%"><br>
 
